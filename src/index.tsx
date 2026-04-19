@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 import { RouterProvider } from 'react-router-dom';
-import { router } from './shared/providers/router';
+import { router } from 'shared/providers/router';
 import { Provider } from 'react-redux';
-import { store } from './shared/store/store';
+import { store } from 'shared/store/store';
 
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);

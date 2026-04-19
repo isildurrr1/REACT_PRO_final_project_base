@@ -1,0 +1,48 @@
+.review {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eceff1;
+}
+
+.review:last-child {
+	border-bottom: none;
+}
+
+.review__name {
+	color: #1a1a1a;
+	font-weight: 800;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 24px;
+}
+
+.review__date {
+	color: #7b8e98;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.review__text {
+	margin-top: 8px;
+	margin-bottom: 0;
+	color: #1a1a1a;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 20px;
+}
+
+.review__header {
+	display: flex;
+	align-items: flex-end;
+	gap: 8px;
+}
+
+.product__reviews {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

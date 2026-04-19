@@ -1,0 +1,42 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	line-height: 1;
+	gap: 8px;
+	margin-top: 24px;
+	padding: 8px 16px;
+	background: none;
+	border: 2px solid transparent;
+	border-radius: 24px;
+	cursor: pointer;
+	color: #1a1a1a;
+	font-weight: 700;
+	font-size: 15px;
+	font-family: inherit;
+	text-decoration: none;
+	transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+	background-color: #ffe44d;
+	border-color: #ffe44d;
+	color: #1a1a1a;
+}
+
+.btn:active {
+	background-color: #ffaa0d;
+	border-color: #ffaa0d;
+}
+
+.btn:focus-visible {
+	outline: 2px solid #fed700;
+	outline-offset: 2px;
+}
+
+.icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+}
+
