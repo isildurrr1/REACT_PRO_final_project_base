@@ -55,6 +55,12 @@ const handleDelete = useCallback((id: string) => {
 ```
 Без `useCallback` `CartItem` перерисовывался бы при каждом ре-рендере `CartList`, даже если корзина не менялась — потому что каждый раз создавался новый объект функции.
 
+| До оптимизации | После оптимизации |
+|---|---|
+| ![Profiler before](docs/profiler-before-usecallback.png) | ![Profiler after](docs/profiler-after-usecallback.png) |
+
+Render: 10.9ms > 4.9ms
+
 **useMemo** для суммы корзины в `CartAmount`:
 ```tsx
 const { allPrice, allDiscount } = useMemo(
